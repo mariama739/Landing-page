@@ -157,9 +157,21 @@ a{
 }
 .imagebas{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; 
 }
-.imagebas :hover{
+.avatar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.bas-avatar{
+    background-color: white;
+    padding: 20px;
+}
+.image{
+    width: 300PX;
+}
+.avatar :hover{
      transform: scale(1.1); 
 }
 .sec{
@@ -200,20 +212,29 @@ a{
     color: gray;
     font-size: 13px;
 }
+.menu{
+    display: none;
+}
 @media screen and  (max-width:700px){
-    
+    .menu{
+        display: flex;
+    }
     .entete{
-       display: flex;
-       flex-direction: column;
-       padding: 0;  
+       display: none;
+    }
+    .menu:hover + .entete{
+        display: block;
+        color: #196455;
+    }
+    .avatar{
+        width: 100%;
     }
     .image .logo{
         width: 150px;
         margin-left: 25%;
         }
     .paragraphe, .p{
-       width: 170px;
-       
+       width: 170px;   
     }
     .paragraphe{
         margin-left: 23%;
@@ -269,6 +290,7 @@ a{
     .les-image, .img{  
        display: flex;
        flex-direction: column;
+       
     }
     .img{
         width: 100%;
@@ -280,6 +302,8 @@ a{
     .imagebas, .image{
         display: flex;
         flex-direction: column;
+        gap: 20PX;
+        width: 100%;
     }
     .flex{
     text-align: center;
