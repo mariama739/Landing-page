@@ -18,9 +18,15 @@ a{
     text-align: center;
     border-bottom: 4px solid rgb(177, 172, 172);
 }
-.LOGO .logo{
+.LOGO, .logo{
     border-radius: 20PX;
-    margin-top:15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo {
+    margin-top: 10%;
 }
 .paragraphe, .p{
     width: 27%;
@@ -169,9 +175,7 @@ a{
     background-color: white;
     padding: 20px;
 }
-.LOGO{
-    width: 300PX;
-}
+
 .avatar :hover{
      transform: scale(1.1); 
 }
@@ -220,12 +224,14 @@ a{
     .menu{
         display: flex;
     }
+    .menu .fa-solid{
+        font-size: 20px;
+    }
     .entete{
        display: none;
     }
     .menu:hover + .entete{
         display: block;
-        color: #196455;
     }
     .avatar{
         width: 100%;
@@ -309,11 +315,20 @@ a{
     .pourcent, .pourcent2, .pourcent1{
         margin-right: 20px;
     }
+    .LOGO,.logo{
+        border-radius: 5px;
+    }
+    .logo{
+        width: 80px;
+    }
 }
 @media screen and (min-width:701px) and (max-width:900px){
     .menu{
         display: flex;
     }
+         .menu .fa-solid {
+             font-size: 20px;
+         }
     .entete{
        display: none;
     }
@@ -341,6 +356,13 @@ a{
      .programme {
         margin-left: -10%;
      }
+}
+.LOGO,
+.logo {
+    border-radius: 5px;
+}
+.logo {
+    width: 80px;
 }
 
 @media screen and (min-width:901px){
