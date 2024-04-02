@@ -18,7 +18,7 @@ a{
     text-align: center;
     border-bottom: 4px solid rgb(177, 172, 172);
 }
-.image .logo{
+.LOGO .logo{
     border-radius: 20PX;
     margin-top:15%;
 }
@@ -168,7 +168,7 @@ a{
     background-color: white;
     padding: 20px;
 }
-.image{
+.LOGO{
     width: 300PX;
 }
 .avatar :hover{
@@ -231,7 +231,7 @@ a{
     }
     .image .logo{
         width: 150px;
-        margin-left: 25%;
+        margin-right: 25%;
         }
     .paragraphe, .p{
        width: 170px;   
@@ -290,7 +290,6 @@ a{
     .les-image, .img{  
        display: flex;
        flex-direction: column;
-       
     }
     .img{
         width: 100%;
@@ -312,5 +311,39 @@ a{
     }
     .pourcent, .pourcent2, .pourcent1{
         margin-right: 20px;
+    }
+}
+@media screen and (min-width:701px) and (max-width:900px){
+    .menu{
+        display: flex;
+    }
+    .entete{
+       display: none;
+    }
+    .menu:hover + .entete{
+        display: block;
+        color: #196455;
+    }
+    .imagebas, .image{
+        display: flex;
+        flex-direction: column;
+        gap: 20PX;
+        width: 100%;
+    }
+    .les-image, .img{  
+        display: flex;
+        flex-direction: column;
+     }
+     .img{
+         width: 100%;
+     }
+}
+
+@media screen and (min-width:901px){
+    .imagebas, .image{
+        width: 100%;
+    }
+    .les-image, .img{
+        width: 100%;
     }
 }
