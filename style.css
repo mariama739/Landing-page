@@ -40,21 +40,16 @@ a{
     font-weight: 500;
     color: white;
 }
-.icone{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    font-size: 50PX;
-    padding-top: 8%;
-    margin: 20PX; 
+.fa, .fa-solid{
+    font-size: 60px;  
 }
-.icone .bor{
+.bor{
     border: 2px solid #369E8A;
     width: 150PX;
     height: 150PX;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     border-radius: 50%;
 }
 .parent1{
@@ -64,10 +59,16 @@ a{
     text-align: center;
 }
 .programme .gras{
-    font-weight: bold;  
+    font-weight: bold; 
+}
+.programme{
+    text-align: center;
+    margin-left: -40%;
 }
 .parent{
-    padding-bottom: 7%;
+    padding: 10%;
+   display: flex;
+   justify-content: space-between;
 }
 .gris{
     background-color: rgb(221, 216, 216);
@@ -252,14 +253,10 @@ a{
         flex-direction: column-reverse;
         align-items: center;
     }
-    .icone{
-        font-size: 25PX;
-        padding-top: 8%;
-        padding-right: 20px;
-    }
-    .icone .bor{
-        width: 75PX;
-        height: 100PX;
+    .parent{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20%;
     }
     .gris{
         width: 100%;
@@ -337,6 +334,13 @@ a{
      .img{
          width: 100%;
      }
+     .parent {
+        display: flex;
+        gap: 10%;
+        }
+     .programme {
+        margin-left: -10%;
+     }
 }
 
 @media screen and (min-width:901px){
@@ -346,4 +350,8 @@ a{
     .les-image, .img{
         width: 100%;
     }
+         .parent {
+             display: flex;
+             gap: 13%;
+         }
 }
